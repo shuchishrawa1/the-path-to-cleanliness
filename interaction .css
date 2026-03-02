@@ -1,0 +1,77 @@
+/* PATH TO CLEANLINESS – INTERACTION / ACTIVITIES */
+
+.ptc-activity {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+.ptc-activity h2 {
+  margin-bottom: 8px;
+}
+
+.ptc-activity p {
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.ptc-checklist {
+  margin-top: 12px;
+}
+
+.ptc-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ptc-checklist-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.ptc-checklist-item label {
+  font-size: 0.9rem;
+}
+
+/* small score / feedback pill */
+
+.ptc-feedback {
+  margin-top: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #ecfdf3;
+  color: #166534;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+/* simple animated icon slot */
+
+.ptc-icon-pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green-light);
+  box-shadow: 0 0 0 0 rgba(56, 176, 0, 0.6);
+  animation: ptc-pulse 1.4s infinite;
+}
+
+@keyframes ptc-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(56, 176, 0, 0.6);
+  }
+  70% {
+    transform: scale(1.4);
+    box-shadow: 0 0 0 12px rgba(56, 176, 0, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(56, 176, 0, 0);
+  }
+}

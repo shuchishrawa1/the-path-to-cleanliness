@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}The Path to Cleanliness – Interact{% endblock %}
+
+{% block extra_head %}
+  <!-- Page-specific CSS if you create /css/interaction.css later -->
+{% endblock %}
+
+{% block content %}
+
+<section class="hero" id="interaction-hero">
+  <div class="hero-inner">
+    <h1>Think, Reflect, Take Action</h1>
+    <p>Answer simple questions, test your knowledge and learn how small decisions affect cleanliness in your area.</p>
+  </div>
+</section>
+
+<section class="section" id="clean-check">
+  <div class="section-inner">
+    <h2>Is Your Area Clean?</h2>
+    <p>These two questions help you reflect honestly on the situation where you live.</p>
+
+    <div class="card">
+      <p><strong>1.</strong> Is your area clean right now?</p>
+      <button class="clean-btn" data-answer="yes">Yes</button>
+      <button class="clean-btn" data-answer="no">No</button>
+    </div>
+
+    <div class="card" id="clean-q2" style="display:none; margin-top:1rem;">
+      <p><strong>2.</strong> Compared to before, is it cleaner now?</p>
+      <button class="clean-btn2" data-answer="yes">Yes</button>
+      <button class="clean-btn2" data-answer="no">No</button>
+    </div>
+
+    <p id="clean-feedback" style="margin-top:1rem; font-weight:bold;"></p>
+  </div>
+</section>
+
+<section class="section" id="quiz">
+  <div class="section-inner">
+    <h2>Cleanliness Quiz</h2>
+    <p>Answer a few quick questions to see how much you know about waste and health.</p>
+
+    <div id="quiz-container">
+      <div class="quiz-question">
+        <p><strong>1.</strong> Which type of waste should always be handled separately and never mixed with regular household waste?</p>
+        <label><input type="radio" name="q1" value="a"> Vegetable peels and food scraps</label><br>
+        <label><input type="radio" name="q1" value="b"> Old newspapers</label><br>
+        <label><input type="radio" name="q1" value="c"> Used syringes and medical bandages</label><br>
+      </div>
+
+      <div class="quiz-question">
+        <p><strong>2.</strong> Burning mixed garbage in open spaces mainly causes:</p>
+        <label><input type="radio" name="q2" value="a"> Clean air and less smell</label><br>
+        <label><input type="radio" name="q2" value="b"> Toxic smoke and breathing problems</label><br>
+        <label><input type="radio" name="q2" value="c"> Immediate fertiliser for crops</label><br>
+      </div>
+
+      <div class="quiz-question">
+        <p><strong>3.</strong> The safest way to handle kitchen waste like peels and leftovers is:</p>
+        <label><input type="radio" name="q3" value="a"> Throw it in the open drain</label><br>
+        <label><input type="radio" name="q3" value="b"> Compost it or send it to a composting system</label><br>
+        <label><input type="radio" name="q3" value="c"> Mix it with plastic and burn it</label><br>
+      </div>
+
+      <button id="quiz-submit">Check My Score</button>
+      <p id="quiz-result"></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="which-bin">
+  <div class="section-inner">
+    <h2>Which Bin Should This Go In?</h2>
+    <p>Click on each item to see the correct bin. Use this as a quick guide for waste segregation.</p>
+
+    <div class="card-grid">
+      <div class="card bin-card" data-answer="Wet waste (biodegradable)">
+        <h4>Banana peel</h4>
+        <p class="bin-front">Which bin?</p>
+        <p class="bin-back"></p>
+      </div>
+      <div class="card bin-card" data-answer="Dry/recyclable waste">
+        <h4>Plastic bottle</h4>
+        <p class="bin-front">Which bin?</p>
+        <p class="bin-back"></p>
+      </div>
+      <div class="card bin-card" data-answer="Hazardous/biomedical waste">
+        <h4>Used syringe</h4>
+        <p class="bin-front">Which bin?</p>
+        <p class="bin-back"></p>
+      </div>
+      <div class="card bin-card" data-answer="Sanitary waste (wrap and dispose as instructed)">
+        <h4>Used mask</h4>
+        <p class="bin-front">Which bin?</p>
+        <p class="bin-back"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

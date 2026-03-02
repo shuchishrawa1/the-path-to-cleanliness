@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}The Path to Cleanliness{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  {% block extra_head %}{% endblock %}
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">The Path to Cleanliness</div>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('interaction') }}">Interact</a>
+      <a href="{{ url_for('get_involved') }}">Get Involved</a>
+      <a href="{{ url_for('community_stories') }}">Community Stories</a>
+      <a href="{{ url_for('magazine') }}" target="_blank">Magazine</a>
+
+    </nav>
+  </div>
+</header>
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  &copy; 2026 The Path to Cleanliness. All rights reserved.
+</footer>
+
+<!-- Global JS (optional, but avoids 404 if you have main.js) -->
+<script src="/js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}The Path to Cleanliness – Home{% endblock %}
+
+{% block content %}
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <h1>The Path to Cleanliness</h1>
+    <p>Cleaner, healthier villages around Chandigarh.</p>
+    <p>
+      We are a student-led NGO working in rural areas near Chandigarh University,
+      including villages like Mamurpur, Gharuan and Morinda, to fix broken waste
+      systems and strengthen rural sanitation.
+    </p>
+    <a href="{{ url_for('get_involved') }}" class="cta-btn">Get Involved</a>
+  </div>
+</section>
+
+<section class="section" id="problem">
+  <div class="section-inner">
+    <h2>Why Rural Cleanliness Matters</h2>
+    <p>
+      In many villages around growing cities, waste management has not kept pace
+      with development. Without proper dustbins, collection points or dump yards,
+      households are often forced to dump or burn waste in the open, harming both
+      the environment and public health.
+    </p>
+
+    <div class="two-col">
+      <div class="col">
+        <h3>The Waste & Health Challenge</h3>
+        <ul>
+          <li>Open dumping and burning pollute air, contaminate water sources and degrade soil.</li>
+          <li>Stagnant garbage and blocked drains attract mosquitoes and rodents, increasing diseases like diarrhoea, dengue and malaria.</li>
+          <li>Sanitation workers and villagers handle mixed waste without protection, facing daily exposure to hazardous materials.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>What We Saw in Villages</h3>
+        <p>
+          In villages around Chandigarh University, we observed scattered garbage,
+          irregular waste collection and a lack of basic facilities such as dustbins,
+          collection points and proper dump yards.
+        </p>
+        <p>
+          Many residents rely on burning or open dumping of waste, which directly
+          contributes to polluted surroundings and health risks for the entire community.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <p>
+      <a href="https://drive.google.com/file/d/112GRZ_W-KZKDwBaWnfJjTHvhLDWlejhp/view?usp=drivesdk"
+         target="_blank">Read our magazine</a>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <h2>Who We Are</h2>
+    <p>
+      The Path to Cleanliness is an emerging non-governmental organisation started by
+      students near Chandigarh University. Our work currently focuses on rural regions
+      around the campus, beginning with villages such as Mamurpur, Gharuan and Morinda.
+    </p>
+    <p>
+      We align our efforts with the Swachh Bharat Mission and focus on practical,
+      ground-level action: assessing village cleanliness, raising awareness, supporting
+      better waste systems and coordinating with local authorities.
+    </p>
+
+    <h3>What We Do</h3>
+    <div class="two-col">
+      <div class="col">
+        <h4>Assess Villages</h4>
+        <ul>
+          <li>Door-to-door surveys to understand household waste practices.</li>
+          <li>Identification of open dumping and burning spots.</li>
+          <li>Mapping of dustbins, drains and waste collection routes.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Engage & Support</h4>
+        <ul>
+          <li>Meetings with villagers, youth, women’s groups and Panchayat members.</li>
+          <li>Awareness activities on hygiene, waste segregation and safe disposal.</li>
+          <li>Clean-up drives and coordination with Municipal Corporation and local bodies.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="vision">
+  <div class="section-inner">
+    <h2>Our Impact & Vision</h2>
+    <p>
+      Through continuous field engagement, we aim to improve visible cleanliness in
+      public areas, increase awareness about hygiene and promote better waste handling
+      practices in rural communities.
+    </p>
+    <p>
+      With adequate support, we plan to expand our activities to more nearby villages,
+      run regular school-based awareness programs, promote waste segregation and
+      composting, and help communities maintain cleanliness independently over time.
+    </p>
+
+    <div class="stat-box">
+      Together, we can reduce sanitation-related health issues and build cleaner, safer
+      and more dignified rural living spaces.
+    </div>
+
+    <a href="{{ url_for('get_involved') }}" class="cta-btn" style="margin-top:1.5rem; display:inline-block;">
+      Join the Effort
+    </a>
+  </div>
+</section>
+
+{% endblock %}

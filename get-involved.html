@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block title %}The Path to Cleanliness – Get Involved{% endblock %}
+
+{% block content %}
+
+<section class="hero" id="get-involved-hero">
+  <div class="hero-inner">
+    <h1>Join the Effort</h1>
+    <p>Volunteer, partner or support financially to help build cleaner, healthier rural communities.</p>
+  </div>
+</section>
+
+<section class="section" id="intro">
+  <div class="section-inner">
+    <h2>How You Can Help</h2>
+    <p>
+      Whether you are a student, villager, NGO, institution or supporter, you can play a role in improving
+      rural cleanliness around Chandigarh University. We welcome volunteers on the ground, partner
+      organisations and financial or in-kind support.
+    </p>
+    <p>
+      We provide digital certificates as a token of recognition after verified participation or support.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="volunteer">
+  <div class="section-inner">
+    <h2>Volunteer With Us</h2>
+    <p>Join our clean-up drives, awareness sessions and village surveys.</p>
+
+    <div class="pledge-box">
+      <h3>Volunteer Interest Form</h3>
+      <p>Share your details and how you would like to help. We will contact you for upcoming activities.</p>
+      <form id="volunteer-form">
+        <label for="vol-name">Full name (for certificate)</label>
+        <input type="text" id="vol-name" name="vol-name" required>
+
+        <label for="vol-email">Email</label>
+        <input type="email" id="vol-email" name="vol-email" required>
+
+        <label for="vol-phone">Phone (optional)</label>
+        <input type="text" id="vol-phone" name="vol-phone">
+
+        <label for="vol-location">Location (village/city)</label>
+        <input type="text" id="vol-location" name="vol-location">
+
+        <label for="vol-help">How would you like to help?</label>
+        <textarea id="vol-help" name="vol-help" rows="3"
+                  placeholder="Clean-up drives, awareness, surveys, design, etc."></textarea>
+
+        <button type="submit">Submit Interest</button>
+        <p id="volunteer-msg"></p>
+      </form>
+    </div>
+
+    <p style="margin-top:0.8rem; font-size:0.9rem;">
+      Volunteers who take part in at least one activity receive a digital certificate of participation within 7–14 days.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="partner">
+  <div class="section-inner">
+    <h2>Partner With Us</h2>
+    <p>
+      If you are an NGO, school, college, CSR team or local body interested in rural cleanliness around
+      Chandigarh, we would be happy to collaborate on joint activities.
+    </p>
+
+    <div class="pledge-box">
+      <h3>Partner / Organisation Form</h3>
+      <form id="partner-form">
+        <label for="org-name">Organisation name</label>
+        <input type="text" id="org-name" name="org-name" required>
+
+        <label for="org-person">Contact person</label>
+        <input type="text" id="org-person" name="org-person" required>
+
+        <label for="org-email">Email</label>
+        <input type="email" id="org-email" name="org-email" required>
+
+        <label for="org-phone">Phone</label>
+        <input type="text" id="org-phone" name="org-phone">
+
+        <label for="org-support">Type of support</label>
+        <textarea id="org-support" name="org-support" rows="3"
+                  placeholder="Funding, joint projects, volunteers, equipment, etc."></textarea>
+
+        <button type="submit">Submit Details</button>
+        <p id="partner-msg"></p>
+      </form>
+    </div>
+
+    <p style="margin-top:0.8rem; font-size:0.9rem;">
+      Partner organisations receive a digital certificate recognising the collaboration and periodic updates on project outcomes.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="support">
+  <div class="section-inner">
+    <h2>Support Our Work</h2>
+    <p>
+      To continue and expand our activities in villages such as Mamurpur and Morinda, we are seeking
+      ₹90,000 to provide cleaning tools, awareness materials, waste segregation support, volunteer
+      logistics, training and basic administrative support.
+    </p>
+
+    <div class="two-col">
+      <div class="col">
+        <h3>Key Expense Categories</h3>
+        <ul>
+          <li>Cleaning equipment and tools – brooms, gloves, masks, dustbins.</li>
+          <li>Awareness programs – posters, pamphlets, banners, village meetings.</li>
+          <li>Waste management support – garbage bags, segregation bins.</li>
+          <li>Volunteer support – travel allowance and refreshments.</li>
+          <li>Training and workshops – hygiene and sanitation sessions.</li>
+          <li>Administrative expenses – printing, documentation, communication.</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <div class="pledge-box">
+          <h3>Support / Funding Interest Form</h3>
+          <form id="support-form">
+            <label for="sup-name">Name / Organisation</label>
+            <input type="text" id="sup-name" name="sup-name" required>
+
+            <label for="sup-email">Email</label>
+            <input type="email" id="sup-email" name="sup-email" required>
+
+            <label for="sup-phone">Phone</label>
+            <input type="text" id="sup-phone" name="sup-phone">
+
+            <label for="sup-type">What would you like to support?</label>
+            <textarea id="sup-type" name="sup-type" rows="3"
+                      placeholder="Tools, awareness materials, training, full project, other."></textarea>
+
+            <button type="submit">Submit Interest</button>
+            <p id="support-msg"></p>
+          </form>
+        </div>
+
+        <p style="margin-top:0.8rem; font-size:0.9rem;">
+          Donors receive a digital certificate of appreciation and a brief report on how their contribution was used.
+        </p>
+        <p style="margin-top:0.5rem; font-size:0.9rem;">
+          You can also upload any related documents (such as proposals or proof of support) to your own Google Drive
+          and paste the shareable link into the form above.
+        </p>
+        <p style="margin-top:1rem;">
+          <a href="PASTE_PROPOSAL_LINK_HERE" target="_blank" rel="noopener"
+             class="cta-btn" style="margin-right:0.5rem;">
+            View Project Proposal (PDF)
+          </a>
+          <a href="PASTE_MAGAZINE_LINK_HERE" target="_blank" rel="noopener"
+             class="cta-btn">
+            View Our Magazine
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="authorities">
+  <div class="section-inner">
+    <h2>Contact Your Local Authorities</h2>
+    <p>
+      If your area is not clean and not improving, it is important to inform your local Nagar Nigam,
+      Nagar Palika, Panchayat or city municipal corporation with clear details and photos.
+    </p>
+    <p>You can:</p>
+    <ul>
+      <li>Search for “[Your city] municipal corporation complaint” to find the official portal.</li>
+      <li>Use the Swachhata or city grievance app, if available, to upload photos and location.</li>
+      <li>Look for phone numbers or emails printed on local garbage vans or notice boards.</li>
+    </ul>
+
+    <p style="margin-top:0.5rem; font-size:0.9rem;">
+      This section can be updated with specific emails, helplines or portals for your city or village
+      as your NGO collects that information.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="privacy">
+  <div class="section-inner">
+    <h2>How We Use Your Data</h2>
+    <p>
+      We use your name and contact details only to coordinate activities, issue certificates and share
+      project updates related to The Path to Cleanliness. We do not share your information outside
+      the NGO without your consent.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="contact-direct">
+  <div class="section-inner">
+    <h2>Direct Contact</h2>
+    <p>
+      You can also reach us directly at:
+      <a href="mailto:shuchishrawa1@gmail.com">
+        shuchishrawa1@gmail.com
+      </a>
+      for volunteering, partnerships, or support.
+    </p>
+  </div>
+</section>
+
+{% endblock %}

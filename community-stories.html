@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}The Path to Cleanliness – Community Stories{% endblock %}
+
+{% block content %}
+
+<section class="hero" id="stories-hero">
+  <div class="hero-inner">
+    <h1>Community Stories & Ideas</h1>
+    <p>Share your magazines, vlogs, blogs and experiences on cleanliness so others can learn and act.</p>
+  </div>
+</section>
+
+<section class="section" id="share">
+  <div class="section-inner">
+    <h2>Share Your Cleanliness Story</h2>
+    <p>
+      This space is for villagers, students, volunteers and partner organisations to share content related
+      to cleanliness, waste management and rural sanitation. Instead of uploading large files directly,
+      please share links to your content.
+    </p>
+
+    <div class="pledge-box">
+      <h3>Story / Content Submission Form</h3>
+      <p>After review, selected stories may be featured below in the Community Gallery.</p>
+      <form id="story-form">
+        <label for="story-name">Name / Organisation</label>
+        <input type="text" id="story-name" name="story-name" required>
+
+        <label for="story-email">Email</label>
+        <input type="email" id="story-email" name="story-email" required>
+
+        <label for="story-location">Location (village/city)</label>
+        <input type="text" id="story-location" name="story-location">
+
+        <label for="story-type">Type of content</label>
+        <input type="text" id="story-type" name="story-type"
+               placeholder="Article, magazine, vlog, blog, poster, other.">
+
+        <label for="story-link">Link to content (URL)</label>
+        <input type="url" id="story-link" name="story-link"
+               placeholder="YouTube, blog, Google Drive, etc." required>
+
+        <label for="story-desc">Short description</label>
+        <textarea id="story-desc" name="story-desc" rows="3"
+                  placeholder="What is it about, where was it done, what impact?"></textarea>
+
+        <button type="submit">Submit Story</button>
+        <p id="story-msg"></p>
+      </form>
+    </div>
+
+    <p style="margin-top:0.8rem; font-size:0.9rem;">
+      We manually review all submissions before publishing them to keep this space safe, relevant and respectful.
+      Contributors whose stories are published can receive a digital recognition certificate on request.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="section-inner">
+    <h2>Community Gallery</h2>
+    <p>
+      Here we feature selected stories, projects and creative work related to cleanliness and waste management.
+    </p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4>Coming Soon: Gharuan Village Spotlight</h4>
+        <p>
+          Our survey and interviews in Gharuan village revealed how perceptions of cleanliness can differ from
+          reality. This section will soon share key insights, photos and video links from that work.
+        </p>
+      </div>
+      <div class="card">
+        <h4>Your Story Could Be Here</h4>
+        <p>
+          Conducted a clean-up drive, made a poster, wrote a blog or recorded a vlog on cleanliness?
+          Share it using the form above so others can learn from your experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
